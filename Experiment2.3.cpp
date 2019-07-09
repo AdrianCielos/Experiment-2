@@ -9,7 +9,8 @@ int main ()
 {
 	cout << "*** FINDING VALUES ***" << endl;
 	cout << endl << endl;
-		
+	
+	//Input Values of X and Y
 	int x, y;
 	float z;
 	z = 2.5;
@@ -24,9 +25,10 @@ int main ()
 	cout << "COMPUTING..." << endl;
 	cout << endl;
 
-
+	//Switch Statement if X values are 1, 2 or any digit
 	switch (x)
 	{
+		//Computations for X=1
 		case 1:
 			cout << setprecision(2) << fixed;	
 			if (y > 1 && y < 5)
@@ -39,7 +41,7 @@ int main ()
 				cout << "V = " << (x+y)/z << endl;
 				break;
 			}
-			
+		//Computations for X=2	
 		case 2:
 			cout << setprecision(2) << fixed;
 			if (y <= 5)
@@ -53,6 +55,7 @@ int main ()
 				cout << "V = " << x-(sqrt(y+z)) << endl;
 				break;
 			}
+		//Computations for X=any value
 		default:
 			{
 			cout << setprecision(2) << fixed;
